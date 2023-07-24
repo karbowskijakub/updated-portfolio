@@ -10,16 +10,46 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
 .section{
   @apply max-w-7xl mx-auto sm:px-10 px-6;
 }
 
+
+/* Navbar */
+
+.nav{
+  @apply max-w-7xl mx-auto sm:px-10 px-6  flex justify-between items-center py-4 bg-transparent;
+}
+
+.link{
+  @apply p-3 last:pr-0 hidden lg:inline;
+}
+
+.hamburger{
+  @apply  inline lg:hidden z-30 ;
+}
+
+.sidebar{
+  @apply caret-violet-100 ;
+}
+/* Hero section */
+
 .hero {
-  @apply relative z-10 flex justify-center items-center flex-col lg:flex-row min-h-screen ;
+  @apply relative flex justify-center lg:justify-between items-center flex-col lg:flex-row min-h-screen  ;
 }
 
 .hero_text {
-  @apply min-w-full mb-10  lg:min-w-[50%];
+  @apply min-w-full mb-10  lg:min-w-[42%] xl:min-w-[50%];
+}
+
+.background{
+  @apply absolute bg-secondary-orange w-1/2 h-full left-0 z-[-10];
+}
+/* Icons */
+
+.down_arrow{
+  @apply absolute m-auto left-0 right-0 bottom-10 w-8 h-8 lg:w-12 lg:h-12 xl:w-16 xl:h-16;
 }
 
 /* Texts*/
@@ -29,6 +59,10 @@
 }
 .secondary_text {
   @apply text-lg sm:text-3xl xl:text-5xl leading-5;
+}
+
+.tertiary_text{
+  @apply text-base lg:text-base  xl:text-xl ;
 }
 
 

@@ -11,7 +11,8 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
-        'primary-orange': '#FF5722',
+        'primary-orange': '#F9A826',
+        'secondary-orange': '#FDF5EB'
       }
     },
   },
