@@ -11,7 +11,7 @@
 }
 
 .section {
-  @apply max-w-7xl mx-auto sm:px-10 px-6;
+  @apply max-w-7xl mx-auto sm:px-10 px-6 min-h-screen;
 }
 
 /* Navbar */
@@ -21,14 +21,14 @@
 }
 
 .link {
-  @apply p-3 last:pr-0 hidden lg:inline ;
+  @apply p-3 last:pr-0 hidden lg:inline cursor-pointer;
 }
 
 .link-sidebar {
-  @apply p-5 border-b-2 last:border-b-0 border-secondary-orange;
+  @apply p-5 border-b-2 last:border-b-0 border-secondary-orange cursor-pointer;
 }
 
-.hover{
+.hover {
   @apply hover:text-primary-orange ease-linear duration-150;
 }
 
@@ -40,14 +40,18 @@
   @apply fixed w-full inset-y-0 right-0  h-screen bg-white z-10 flex justify-center items-center;
 }
 
-.sidebar-wrapper{
-  @apply flex justify-center items-center text-center border-2 border-secondary-orange
+.sidebar-wrapper {
+  @apply flex justify-center items-center text-center border-2 border-secondary-orange;
+}
+
+.bg-shadow {
+  @apply bg-white shadow-[0_7px_29px_-21px_rgba(249,168,38,0.64)];
 }
 
 /* Hero section */
 
 .hero {
-  @apply relative flex justify-center lg:justify-between items-center flex-col lg:flex-row min-h-screen;
+  @apply relative flex justify-center lg:justify-between items-center flex-col lg:flex-row;
 }
 
 .hero_text {
@@ -57,6 +61,13 @@
 .background {
   @apply absolute bg-secondary-orange w-1/2 h-full left-0 z-[-10];
 }
+
+/* About section */
+
+.about {
+  @apply relative flex  flex-col lg:flex-row;
+}
+
 /* Icons */
 
 .down_arrow {
@@ -74,4 +85,14 @@
 
 .tertiary_text {
   @apply text-base lg:text-base  xl:text-xl font-bold;
+}
+
+/*Before*/
+
+.hero_section_decoration {
+  @apply before:bg-primary-orange before:w-1/2 before:h-16  sm:before:h-24  xl:before:w-64  xl:before:h-36  before:left-[-30px] content-[""] before:z-[-1] before:absolute;
+}
+
+.title_section_decoration {
+  @apply before:bg-primary-orange before:w-1/2 before:h-8 sm:before:h-12 xl:before:w-64  xl:before:h-20 before:left-[-30px] content-[""] before:z-[-1]  before:absolute;
 }

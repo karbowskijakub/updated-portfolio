@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-
+import About from "@/components/About";
 export default function Home() {
   return (
     <main>
@@ -7,7 +7,7 @@ export default function Home() {
           <Hero />
         </section>
         <section id="home">
-          <Hero />
+          <About/>
         </section>
     </main>
   );
