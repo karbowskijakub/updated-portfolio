@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Typewriter from "react-ts-typewriter";
-import IconArrowDownCircle from "@/svg/arrow-down-circle";
+import Arrow from "@/public/icons/arrow-down.svg"
+
 const Hero = () => {
   return (
     <div className="hero section">
@@ -20,7 +21,7 @@ const Hero = () => {
         </h3>
       </div>
       <Image  alt="Hero Image" width={540} height={560} src="/images/hero.svg" />
-      <IconArrowDownCircle className="down_arrow animate-ping" />
+      <Arrow className="down_arrow animate-ping" />
       <div className="background"></div>
     </div>
     

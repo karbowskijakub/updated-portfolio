@@ -12,7 +12,11 @@ module.exports = {
       },
       colors: {
         'primary-orange': '#F9A826',
-        'secondary-orange': '#FDF5EB'
+        'secondary-orange': '#FDF5EB',
+        'primary-grey': '#696F70'
+      },
+      animation: {
+        'bounce-slow': 'bounce 5s linear infinite',
       }
     },
   },

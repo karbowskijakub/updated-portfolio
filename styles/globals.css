@@ -65,9 +65,11 @@
 /* About section */
 
 .about {
-  @apply relative flex  flex-col lg:flex-row;
+  @apply relative flex  flex-col;
 }
-
+.about-container {
+  @apply flex  flex-col lg:flex-row  mt-20 sm:mt-32;
+}
 /* Icons */
 
 .down_arrow {
@@ -87,12 +89,28 @@
   @apply text-base lg:text-base  xl:text-xl font-bold;
 }
 
+/*Buttons*/
+
+.contact_button {
+  @apply tertiary_text font-bold relative z-10 p-5 lg:p-5 after:z-[-1] 
+  after:h-full after:w-full after:absolute after:top-[10px] transition-all
+ hover:text-white after:duration-150 after:ease-in-out hover:after:top-0 hover:after:left-0
+ after:bg-primary-orange after:left-[10px] bg-white border-2 border-black;
+}
+
+.icons_button {
+  @apply relative p-3  hover:after:w-full  after:z-[-1] 
+  after:absolute after:top-0 after:right-0 after:h-full 
+  after:w-1/2 after:bg-primary-orange border-2 border-black
+  transition-all  after:duration-150 after:ease-in-out  hover:fill-white;
+}
+
 /*Before*/
 
 .hero_section_decoration {
-  @apply before:bg-primary-orange before:w-1/2 before:h-16  sm:before:h-24  xl:before:w-64  xl:before:h-36  before:left-[-30px] content-[""] before:z-[-1] before:absolute;
+  @apply before:bg-primary-orange before:w-[45%] before:h-16  sm:before:h-24  xl:before:w-64  xl:before:h-36  before:left-[-30px] content-[""] before:z-[-1] before:absolute;
 }
 
 .title_section_decoration {
-  @apply before:bg-primary-orange before:w-1/2 before:h-8 sm:before:h-12 xl:before:w-64  xl:before:h-20 before:left-[-30px] content-[""] before:z-[-1]  before:absolute;
+  @apply before:bg-primary-orange before:w-[45%] before:h-8 sm:before:h-12 xl:before:w-64  xl:before:h-20 before:left-[-30px] content-[""] before:z-[-1]  before:absolute;
 }

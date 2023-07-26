@@ -6,6 +6,12 @@ export interface NavLinks {
   contact: string;
 }
 
+export interface Icons {
+  github: string,
+  instagram: string,
+  linkedin: string,
+}
+
 export interface ToggleProps {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;

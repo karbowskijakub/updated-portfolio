@@ -23,5 +23,8 @@
     "react-ts-typewriter": "^0.1.8-b",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1"
   }
 }

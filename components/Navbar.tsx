@@ -10,24 +10,30 @@ import { slideDown } from "@/utils/animations";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [navbar, setNavbar] = useState(() => {
-    return JSON.parse(localStorage.getItem("navbar") ?? "false");
-  });
+  const [navbar, setNavbar] = useState(false);
 
   useEffect(() => {
-    const changeNav = () => {
-      setNavbar(window.scrollY >= 40);
-    };
+    if (typeof window !== "undefined") {
+      const storedNavbar = JSON.parse(localStorage.getItem("navbar") ?? "false");
+      setNavbar(storedNavbar);
 
-    window.addEventListener("scroll", changeNav);
+      const changeNav = () => {
+        setNavbar(window.scrollY >= 40);
+      };
 
-    return () => {
-      window.removeEventListener("scroll", changeNav);
-    };
+      window.addEventListener("scroll", changeNav);
+
+      return () => {
+        window.removeEventListener("scroll", changeNav);
+      };
+    }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("navbar", JSON.stringify(navbar));
+    // Check if the code is running in the client-side (browser)
+    if (typeof window !== "undefined") {
+      localStorage.setItem("navbar", JSON.stringify(navbar));
+    }
   }, [navbar]);
 
 
@@ -44,7 +50,7 @@ const Navbar = () => {
       >
         <nav className="nav tertiary_text">
           <Link className="font-bold p-3 pl-0" href="/home">
-            JKarbowski
+            Jakub Karbowski
           </Link>
           <div>
             <ul>

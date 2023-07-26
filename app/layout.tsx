@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 
 export const metadata: Metadata = {
   title: 'Jakub Karbowski',
-  description: 'Strony internetowe w ludzkim języku',
+  description: 'Strony i aplikacje internetowe',
 }
 
 export default function RootLayout({
