@@ -17,7 +17,21 @@ module.exports = {
       },
       animation: {
         'bounce-slow': 'bounce 5s linear infinite',
-      }
+      },
+      height: {
+        'half-screen': '50vh',
+      },
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 50s linear infinite",
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-250px * 5))",
+          },
+        },
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,3 @@
-import React from 'react';
 import { ToggleProps } from '@/types';
 
 const Toggle: React.FC<ToggleProps> = ({ isOpen, setIsOpen }) => {

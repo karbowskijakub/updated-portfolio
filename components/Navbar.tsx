@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedNavbar = JSON.parse(localStorage.getItem("navbar") ?? "false");
+      const storedNavbar = JSON.parse(sessionStorage.getItem("navbar") ?? "false");
       setNavbar(storedNavbar);
 
       const changeNav = () => {
@@ -30,11 +30,11 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    // Check if the code is running in the client-side (browser)
     if (typeof window !== "undefined") {
-      localStorage.setItem("navbar", JSON.stringify(navbar));
+      sessionStorage.setItem("navbar", JSON.stringify(navbar));
     }
   }, [navbar]);
+
 
 
   return (

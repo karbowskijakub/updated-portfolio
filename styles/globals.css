@@ -13,6 +13,10 @@
 .section {
   @apply max-w-7xl mx-auto sm:px-10 px-6 min-h-screen;
 }
+.section_short{
+  @apply max-w-7xl mx-auto sm:px-10 px-6 ;
+}
+
 
 /* Navbar */
 
@@ -64,9 +68,7 @@
 
 /* About section */
 
-.about {
-  @apply relative flex  flex-col;
-}
+
 .about-container {
   @apply flex  flex-col lg:flex-row  mt-20 sm:mt-32;
 }
@@ -75,6 +77,17 @@
 .down_arrow {
   @apply absolute m-auto left-0 right-0 bottom-10 w-8 h-8 lg:w-12 lg:h-12 xl:w-16 xl:h-16;
 }
+
+/* slider section */
+
+.slider_animation{
+  @apply mt-5 lg:mt-10 m-auto w-full overflow-hidden bg-transparent before:absolute
+   before:left-0 before:top-0 before:z-[2] before:h-full before:w-[100px] before:bg-[linear-gradient(to_right,orange_0%,rgba(255,255,255,0)_100%)]
+    before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[100px] 
+    after:-scale-x-100 after:bg-[linear-gradient(to_right,orange_0%,rgba(255,255,255,0)_100%)] after:content-['']
+}
+
+
 
 /* Texts*/
 

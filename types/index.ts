@@ -12,6 +12,8 @@ export interface Icons {
   linkedin: string,
 }
 
+
+
 export interface ToggleProps {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;

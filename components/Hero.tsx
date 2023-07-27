@@ -5,6 +5,7 @@ import Arrow from "@/public/icons/arrow-down.svg"
 
 const Hero = () => {
   return (
+    <section id="home">
     <div className="hero section">
       <div className="hero_text">
         <h1 className="primary_text hero_section_decoration">
@@ -24,6 +25,7 @@ const Hero = () => {
       <Arrow className="down_arrow animate-ping" />
       <div className="background"></div>
     </div>
+    </section>
     
   );
 };

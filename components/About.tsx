@@ -4,12 +4,11 @@ import { iconsArray } from "@/constants";
 
 const About = () => {
 
-
-  
   return (
-    <div className="section about py-8 lg:py-24">
+    <section>
+    <div className="section_short  py-8 lg:py-24">
       <div className="flex flex-col">
-        <h2 className="primary_text  mb-4 title_section_decoration ">O mnie</h2>
+        <h2 className="primary_text relative mb-4 title_section_decoration ">O mnie</h2>
         <p className="secondary_text text-primary-grey">
           Fullstack Developer & Freelancer
         </p>
@@ -45,7 +44,7 @@ const About = () => {
           <div className="flex flex-col lg:flex-row mt-5">
             <button className="contact_button">Kontakt</button>
             
-              <ul className="flex flex-row justify-center items-center mt-6 lg:mt-0 lg:ml-7">
+              <ul className="flex flex-row justify-center items-center mt-8 lg:mt-0 lg:ml-7">
                 {iconsArray.map((Icon) => (
                   <li key={Icon} className="mx-2">
                     <button className="icons_button ;
@@ -60,6 +59,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
