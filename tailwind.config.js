@@ -15,14 +15,12 @@ module.exports = {
         'secondary-orange': '#FDF5EB',
         'primary-grey': '#696F70'
       },
-      animation: {
-        'bounce-slow': 'bounce 5s linear infinite',
-      },
       height: {
         'half-screen': '50vh',
       },
       animation: {
         ["infinite-slider"]: "infiniteSlider 50s linear infinite",
+        'bounce-slow': 'bounce 5s linear infinite',
       },
       keyframes: {
         infiniteSlider: {

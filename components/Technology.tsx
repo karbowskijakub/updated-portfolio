@@ -10,7 +10,7 @@ const Technology = () => {
             Technologie
           </h2>
           <p className="secondary_text text-primary-grey">
-            Poznaj technologie, których używam
+            Spójrz jakich technologii używam
           </p>
         </div>
         <div className="w-full ">
