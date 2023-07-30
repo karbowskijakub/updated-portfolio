@@ -7,14 +7,19 @@ export interface NavLinks {
 }
 
 export interface Icons {
-  github: string,
-  instagram: string,
-  linkedin: string,
+  name: string,
+  icon: any,
+
 }
 
-
+export interface ServiceItemProps {
+  Icon: React.ComponentType<{ width: string; height: string; alt:string }>; 
+  title: string;
+  text: string;
+}
 
 export interface ToggleProps {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
+

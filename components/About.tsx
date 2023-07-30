@@ -21,6 +21,7 @@ const About = () => {
             width={540}
             height={560}
             src="/images/about.svg"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
         <div className="w-full lg:w-1/2 py-5 lg:p-5 z-0">

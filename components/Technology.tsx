@@ -1,5 +1,5 @@
 "use client";
-import Slider from "./Slider";
+import Slider from "@/components/Slider";
 
 const Technology = () => {
   return (
