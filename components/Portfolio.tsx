@@ -10,12 +10,25 @@ const Portfolio = () => {
           <p className="secondary_text text-primary-grey">Moje prace</p>
         </div>
 
-        <div className="grid grid-cols-3 grid-rows-10 lg:grid-cols-3 lg:grid-rows-3 gap-5 lg:gap-10 mt-10 mb-10 xl:mt-24">
-        <div className="col-span-3 row-span-6 lg:col-span-2 lg:row-span-4 w-full h-full bg-primary-grey">
-          <Image  alt="Hero Image" width={540} height={560} src="/images/hero.svg" />
+        <div className="grid grid-cols-1 grid-rows-6  lg:grid-cols-3 lg:grid-rows-4 gap-y-5 lg:gap-10 mt-10 mb-10 xl:mt-24">
+          <div className=" relative col-span-2 row-span-5 lg:col-span-2 lg:row-span-4   ">
+            <Image
+              alt="Hero Image"
+              layout='fill'
+
+              src="/images/cryptoenth.png"
+            />
           </div>
-          <div className="col-span-3 row-span-3 row-start-7 lg:row-start-auto lg:row-span-2 lg:col-start-3 w-full h-full bg-primary-grey"><Image  alt="Hero Image" width={540} height={560} src="/images/hero.svg" /></div>
-          <div className="flex  justify-center items-center contact_button col-span-3 row-start-10 lg:row-span-2 lg:col-start-3 lg:row-start-3 w-full h-full bg-primary-grey">Zobacz pozostałe prace</div>
+          <div className="relative  hidden lg:block lg:relative lg:row-span-3 lg:col-start-3  ">
+            <Image
+              alt="Hero Image"
+              layout='fill'
+              src="/images/cryptoenth.png"
+            />
+          </div>
+          <div className="relative cursor-pointer flex justify-center items-center contact_button  w-full h-full bg-primary-grey  lg:col-start-3 lg:row-start-4">
+            Zobacz resztę prac
+          </div>
         </div>
       </div>
     </section>

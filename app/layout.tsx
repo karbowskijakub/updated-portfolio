@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pl">
+    <html lang="zxx">
       <body className='relative'>
         <Navbar/>
         {children}
