@@ -44,28 +44,19 @@ export const myNavLinks: NavLinks = {
 
 export const isMobile: boolean = true;
 
-const iconsArrayThree = [
-  Basket,
-  Marketing,
-  App,
-  Responsive,
-  Support,
-  Laptop,
-];
+const iconsArrayThree = [Basket, Marketing, App, Responsive, Support, Laptop];
 
 export const imagesArray = [
-{
-    image:"businesses",
-},
-{
-  image:"cryptoenth",
-},
-{
-  image:"businesses",
-}
-
-]
-
+  {
+    image: "businesses",
+  },
+  {
+    image: "cryptoenth",
+  },
+  {
+    image: "portfolio",
+  },
+];
 
 export const iconsData = [
   {
@@ -98,7 +89,4 @@ export const iconsData = [
     text: "Tworzę spersonalizowane aplikacje internetowe.",
     icon: iconsArrayThree[2],
   },
-
 ];
-
-

@@ -7,13 +7,12 @@ export interface NavLinks {
 }
 
 export interface Icons {
-  name: string,
-  icon: any,
-
+  name: string;
+  icon: any;
 }
 
 export interface ServiceItemProps {
-  Icon: React.ComponentType<{ width: string; height: string; alt:string }>; 
+  Icon: React.ComponentType<{ width: string; height: string; alt: string }>;
   title: string;
   text: string;
 }
@@ -23,3 +22,6 @@ export interface ToggleProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+export interface SidebarProps {
+  setOpen: (value: boolean) => void;
+}

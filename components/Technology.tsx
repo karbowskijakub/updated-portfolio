@@ -3,7 +3,7 @@ import Slider from "@/components/Slider";
 
 const Technology = () => {
   return (
-    <section className="bg-secondary-orange ">
+    <section className="bg-section-pattern ">
       <div className="section_short">
         <div className="flex flex-col">
           <h2 className="primary_text mb-4 relative title_section_decoration z-0">
@@ -14,7 +14,7 @@ const Technology = () => {
           </p>
         </div>
         <div className="w-full ">
-         <Slider/>
+          <Slider />
         </div>
       </div>
     </section>

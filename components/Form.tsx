@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-	const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-	  async function handleSubmit(event: any) {
+  async function handleSubmit(event: any) {
     event.preventDefault();
     setLoading(true);
 
@@ -40,55 +40,56 @@ export default function ContactForm() {
       setLoading(false);
     }
   }
-	return (
-		<form onSubmit={handleSubmit} className="lg:mr-40">
-			<div className="w-full flex flex-col my-4">
-				<label className="font-bold text-gray-800" htmlFor="name">
-					Imię
-				</label>
-				<input
-					type="text"
-					minLength={3}
-					maxLength={150}
-					required
-					className=" p-4 bg-gray-50 border border-gray-100 "
-					autoComplete="off"
-					id="name"
-				/>
-			</div>
-			<div className="w-full flex flex-col my-4">
-				<label className="font-bold text-gray-800" htmlFor="email">
-					Email
-				</label>
-				<input
-					type="email"
-					minLength={5}
-					maxLength={150}
-					required
-					className=" p-4 bg-gray-50 border border-gray-100 "
-					autoComplete="off"
-					id="email"
-				/>
-			</div>
-			<div>
-				<label className="font-bold text-gray-800" htmlFor="message">
-					Wiadomość
-				</label>
-				<textarea
-					rows={4}
-					required
-					minLength={10}
-					maxLength={500}
-					name="message"
-					className="w-full p-4 bg-gray-50 border border-gray-100 "
-				/>
-			</div>
-			<button
-				type="submit"
-				disabled={loading}
-				className=" w-full text-ternary contact_button disabled:bg-gray-400 disabled:text-gray-100   mt-4">
-				Send Message
-			</button>
-		</form>
-	);
+  return (
+    <form onSubmit={handleSubmit} className="lg:mr-40">
+      <div className="w-full flex flex-col my-4">
+        <label className="font-bold text-gray-800" htmlFor="name">
+          Imię
+        </label>
+        <input
+          type="text"
+          minLength={3}
+          maxLength={150}
+          required
+          className=" p-4 bg-gray-50 border border-gray-100 "
+          autoComplete="off"
+          id="name"
+        />
+      </div>
+      <div className="w-full flex flex-col my-4">
+        <label className="font-bold text-gray-800" htmlFor="email">
+          Email
+        </label>
+        <input
+          type="email"
+          minLength={5}
+          maxLength={150}
+          required
+          className=" p-4 bg-gray-50 border border-gray-100 "
+          autoComplete="off"
+          id="email"
+        />
+      </div>
+      <div>
+        <label className="font-bold text-gray-800" htmlFor="message">
+          Wiadomość
+        </label>
+        <textarea
+          rows={4}
+          required
+          minLength={10}
+          maxLength={500}
+          name="message"
+          className="w-full p-4 bg-gray-50 border border-gray-100 "
+        />
+      </div>
+      <button
+        type="submit"
+        disabled={loading}
+        className=" w-full text-ternary contact_button disabled:bg-gray-400 disabled:text-gray-100   mt-4"
+      >
+        Send Message
+      </button>
+    </form>
+  );
 }

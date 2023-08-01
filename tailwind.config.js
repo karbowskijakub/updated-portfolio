@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'section-pattern': "url('/images/pattern-orange.svg')",
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },

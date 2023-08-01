@@ -14,7 +14,9 @@ const Navbar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedNavbar = JSON.parse(sessionStorage.getItem("navbar") ?? "false");
+      const storedNavbar = JSON.parse(
+        sessionStorage.getItem("navbar") ?? "false"
+      );
       setNavbar(storedNavbar);
 
       const changeNav = () => {
@@ -35,8 +37,6 @@ const Navbar = () => {
     }
   }, [navbar]);
 
-
-
   return (
     <AnimatePresence>
       <motion.header
@@ -49,20 +49,22 @@ const Navbar = () => {
         }`}
       >
         <nav className="nav tertiary_text">
-          <Link className="font-bold p-3 pl-0" href="/home">
+          <Link className="font-bold p-3 pl-0" href="/">
             Jakub Karbowski
           </Link>
           <div>
             <ul>
               {Object.values(myNavLinks).map((link) => (
                 <li key={link} className="link hover">
-                  <Link href={`#${link}`}>{link}</Link>
+                  <Link href={`#${link.replace(/\s/g, "_")}`}>{link}</Link>
                 </li>
               ))}
             </ul>
           </div>
           <Toggle isOpen={isOpen} setIsOpen={setIsOpen} />
-          <AnimatePresence>{isOpen && <Sidebar />}</AnimatePresence>
+          <AnimatePresence>
+            {isOpen && <Sidebar setOpen={setIsOpen} />}
+          </AnimatePresence>
         </nav>
       </motion.header>
     </AnimatePresence>
