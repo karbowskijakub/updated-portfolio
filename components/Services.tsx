@@ -7,7 +7,7 @@ import { iconsData } from "@/constants";
 const Services = () => {
   return (
     <section>
-      <div className="relative section_short py-8 lg:py-24 z-0">
+      <div className="relative section_short">
         <div className="flex flex-col ">
           <h2 className="primary_text relative mb-4 title_section_decoration z-0">
             Usługi

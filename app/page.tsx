@@ -3,6 +3,8 @@ import About from "@/components/About";
 import Technology from "@/components/Technology";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import Contact from "@/components/Contact";
+
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <Technology />
       <Services />
       <Portfolio />
+      <Contact/>
     </main>
   );
 }

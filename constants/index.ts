@@ -53,6 +53,20 @@ const iconsArrayThree = [
   Laptop,
 ];
 
+export const imagesArray = [
+{
+    image:"businesses",
+},
+{
+  image:"cryptoenth",
+},
+{
+  image:"businesses",
+}
+
+]
+
+
 export const iconsData = [
   {
     title: "Strony internetowe",

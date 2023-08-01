@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <section>
-    <div className="section_short  py-8 lg:py-24">
+    <div className="section_short ">
       <div className="flex flex-col">
         <h2 className="primary_text relative mb-4 title_section_decoration ">O mnie</h2>
         <p className="secondary_text text-primary-grey">

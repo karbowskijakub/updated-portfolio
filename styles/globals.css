@@ -14,7 +14,7 @@
   @apply max-w-7xl mx-auto sm:px-10 px-6 min-h-screen;
 }
 .section_short{
-  @apply max-w-7xl mx-auto sm:px-10 px-6 ;
+  @apply max-w-7xl mx-auto sm:px-10 px-6 py-12 lg:py-24 z-0 ;
 }
 
 
@@ -110,6 +110,15 @@
  hover:text-white after:duration-150 after:ease-in-out hover:after:top-0 hover:after:left-0
  after:bg-primary-orange after:left-[10px] bg-white border-2 border-black;
 }
+
+.portfolio_card {
+  @apply tertiary_text font-bold relative z-10 p-5 lg:p-5 after:z-[-1] 
+  after:h-full after:w-full after:absolute after:top-[-15px] transition-all
+ hover:text-white after:duration-150 after:ease-in-out hover:after:top-0 hover:after:left-0
+ after:bg-primary-orange after:left-[10px] bg-white border-2 border-black;
+}
+
+
 
 .icons_button {
   @apply relative p-3  hover:after:w-full  after:z-[-1] 
