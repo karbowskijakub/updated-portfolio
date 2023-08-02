@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import { iconsArray } from "@/constants";
+import { iconsArray,socialIconsArray } from "@/constants";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -30,7 +31,7 @@ const About = () => {
             <h3 className="secondary_text mb-5 font-bold ">Poznaj mnie</h3>
             <p className="mt-5 ternary_text">
               Nazywam się{" "}
-              <span className="text-primary-orange">Jakub Karbowski</span>,
+              <span className="text-primary-orange font-bold">Jakub Karbowski</span>,
               swoją przygodę z programowaniem rozpocząłem w czerwcu 2021 roku i
               od tamtej pory stanowi nieodłączną część mojego życia. To
               fascynujące hobby pochłania mnie każdego dnia. Nieustannie
@@ -45,17 +46,19 @@ const About = () => {
               aby zapewnić doskonałą jakość i funkcjonalność.
             </p>
             <div className="flex flex-col lg:flex-row mt-5">
+              <Link href='#Kontakt'>
               <button className="contact_button">Kontakt</button>
-
+              </Link>
               <ul className="flex flex-row justify-center items-center mt-8 lg:mt-0 lg:ml-7">
-                {iconsArray.map((Icon) => (
+                {socialIconsArray.map(({icon:Icon,link}) => (
                   <li key={Icon} className="mx-2">
+                    <Link href={link}>
                     <button
-                      className="icons_button ;
-                    "
+                      className="icons_button"
                     >
                       <Icon width={30} height={30} alt={`Icon ${Icon.name}`} />
                     </button>
+                    </Link>
                   </li>
                 ))}
               </ul>

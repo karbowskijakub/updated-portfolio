@@ -1,6 +1,8 @@
 "use client";
 import PortfolioItem from "./PortfolioItem";
 import { imagesArray } from "@/constants";
+import Link from "next/link";
+
 const Portfolio = () => {
   return (
     <section id="Portfolio" className="bg-section-pattern ">
@@ -13,13 +15,16 @@ const Portfolio = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row  z-[-10] lg:justify-between items-center w-full min-h-full  lg:my-20">
-          {imagesArray.map((item, index) => (
-            <PortfolioItem key={index} image={item.image} />
+          {imagesArray.map((item) => (
+            <PortfolioItem key={item.id} image={item.image} />
+         
           ))}
         </div>
+        <Link href="https://github.com/karbowskijakub">
         <button className=" z-[-10] w-full mt-10 cursor-pointer  contact_button ">
-          Zobacz resztę prac
+          Zobacz moje prace
         </button>
+        </Link>
       </div>
     </section>
   );

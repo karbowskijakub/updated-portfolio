@@ -1,6 +1,7 @@
 "use client";
 import ServiceItem from "./ServiceItem";
 import { iconsData } from "@/constants";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -22,9 +23,11 @@ const Services = () => {
             />
           ))}
         </div>
+        <Link href="#Kontakt">
         <button className="contact_button  w-full lg:w-fit ">
           Skontaktuj się ze mną
         </button>
+        </Link>
       </div>
     </section>
   );

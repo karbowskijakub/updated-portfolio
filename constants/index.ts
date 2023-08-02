@@ -1,4 +1,4 @@
-import { NavLinks, Icons } from "@/types";
+import { NavLinks } from "@/types";
 import Github from "@/public/icons/github.svg";
 import Linkedin from "@/public/icons/linkedin.svg";
 import Instagram from "@/public/icons/instagram.svg";
@@ -49,12 +49,15 @@ const iconsArrayThree = [Basket, Marketing, App, Responsive, Support, Laptop];
 export const imagesArray = [
   {
     image: "businesses",
+    id: "1",
   },
   {
     image: "cryptoenth",
+    id: "2",
   },
   {
     image: "portfolio",
+    id: "3",
   },
 ];
 
@@ -88,5 +91,19 @@ export const iconsData = [
     title: "Aplikacje",
     text: "Tworzę spersonalizowane aplikacje internetowe.",
     icon: iconsArrayThree[2],
+  },
+];
+export const socialIconsArray = [
+  {
+    link: "https://github.com/karbowskijakub",
+    icon: iconsArray[0],
+  },
+  {
+    link: "https://www.linkedin.com/in/jakub-karbowski-48a254217/",
+    icon: iconsArray[1],
+  },
+  {
+    link: "https://www.instagram.com/kuba_karbowski_/",
+    icon: iconsArray[2],
   },
 ];

@@ -49,7 +49,12 @@ const Navbar = () => {
         }`}
       >
         <nav className="nav tertiary_text">
-          <Link className="font-bold p-3 pl-0" href="/">
+          <Link
+            className="font-bold p-3 pl-0 text-transparent bg-clip-text bg-gradient-to-r from-primary-orange  to-black
+          
+          "
+            href="/"
+          >
             Jakub Karbowski
           </Link>
           <div>
