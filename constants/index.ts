@@ -17,7 +17,7 @@ import Marketing from "@/public/icons/marketing.svg";
 import App from "@/public/icons/app.svg";
 import Responsive from "@/public/icons/responsive.svg";
 import Support from "@/public/icons/support.svg";
-import Laptop from "@/public/icons/Laptop.svg";
+import Laptop from "@/public/icons/laptop.svg";
 
 export const iconsArray = [Github, Linkedin, Instagram];
 
