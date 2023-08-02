@@ -21,7 +21,7 @@ const Info = () => {
               <ul className="flex flex-row justify-center items-center ">
                 {socialIconsArray.map(({ icon: Icon, link }) => (
                   <li key={Icon} className="mr-4 last:mr-0">
-                    <Link href={link}>
+                    <Link href={link} target="_blank">
                       <button className="icons_button z-10">
                         <Icon
                           width={30}

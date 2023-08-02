@@ -40,7 +40,7 @@ const Portfolio = () => {
             />
           ))}
         </div>
-        <Link href="https://github.com/karbowskijakub">
+        <Link href="https://github.com/karbowskijakub" target="_blank">
           <button className=" z-[-10] w-full mt-10 cursor-pointer  contact_button ">
             Zobacz moje prace
           </button>
