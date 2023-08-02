@@ -71,7 +71,7 @@ const About = () => {
             </p>
             <div className="flex flex-col lg:flex-row mt-5">
               <Link href="#Kontakt">
-                <button className="contact_button">Kontakt</button>
+                <button className="contact_button w-full">Kontakt</button>
               </Link>
               <ul className="flex flex-row justify-center items-center mt-8 lg:mt-0 lg:ml-7">
                 {socialIconsArray.map(({ icon: Icon, link }) => (
