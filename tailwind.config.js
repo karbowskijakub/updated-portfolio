@@ -24,6 +24,7 @@ module.exports = {
       animation: {
         ["infinite-slider"]: "infiniteSlider 50s linear infinite",
         'bounce-slow': 'bounce 5s linear infinite',
+        ["floating"]: "floating 3s ease-in-out infinite"
       },
       keyframes: {
         infiniteSlider: {
@@ -32,6 +33,12 @@ module.exports = {
             transform: "translateX(calc(-250px * 5))",
           },
         },
+        floating: {
+          "0%": { transform: "translate(0,  0px)" },
+          "50%":  { transform: "translate(0, -40px)" },
+          "100%":   { transform: "translate(0, -0px)" }   
+      }
+
       },
     },
   },

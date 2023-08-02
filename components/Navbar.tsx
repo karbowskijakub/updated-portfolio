@@ -43,6 +43,7 @@ const Navbar = () => {
         initial="initial"
         animate="animate"
         exit="exit"
+        custom={2}
         variants={slideDown}
         className={`w-full  duration-500 z-10 fixed ${
           navbar ? "bg-shadow" : ""

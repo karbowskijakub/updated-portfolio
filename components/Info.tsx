@@ -12,7 +12,9 @@ const Info = () => {
           <div className="flex  flex-center justify-center flex-col text-center lg:text-start mb-10 lg:mb-0 ">
             <div>
               {" "}
-              <h4 className="ternary_text font-bold border-b-2 border-primary-orange inline">Jakub Karbowski</h4>
+              <h4 className="ternary_text font-bold border-b-2 border-primary-orange inline">
+                Jakub Karbowski
+              </h4>
             </div>
             <div>
               <h5 className="font-bold text- my-5 ">Obserwuj mnie tutaj:</h5>
@@ -24,7 +26,7 @@ const Info = () => {
                         <Icon
                           width={30}
                           height={30}
-                          alt={`Icon ${Icon.name}`}
+                          alt={`Ikona ${Icon.name}`}
                         />
                       </button>
                     </Link>
@@ -57,7 +59,7 @@ const Info = () => {
               </h5>
               <div>
                 <p className="font-bold text-ternary leading-0">
-                  <Mail className="inline mr-1 w-10 h-10" />
+                  <Mail className="inline mr-1 w-10 h-10" alt="Ikona emaila" />
                   kontakt@jakubkarbowski.pl
                 </p>
               </div>

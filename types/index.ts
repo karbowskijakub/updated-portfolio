@@ -11,10 +11,18 @@ export interface Icons {
   icon: any;
 }
 
+export interface PortfolioProps {
+  image: string;
+  controls: any;
+  index: number;
+}
+
 export interface ServiceItemProps {
   Icon: React.ComponentType<{ width: string; height: string; alt: string }>;
   title: string;
   text: string;
+  index: number;
+  controls: any;
 }
 
 export interface ToggleProps {

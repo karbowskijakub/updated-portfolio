@@ -1,10 +1,9 @@
 "use client";
-
 import { useState } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 export default function ContactForm() {
-	const notify = () => toast.success("Wiadomość wysłana pomyślnie.");
+  const notify = () => toast.success("Wiadomość wysłana pomyślnie.");
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event: any) {
@@ -29,7 +28,7 @@ export default function ContactForm() {
       if (response.ok) {
         console.log("Message sent successfully");
         setLoading(false);
-notify()
+        notify();
         // reset the form
         event.target.name.value = "";
         event.target.email.value = "";
@@ -91,7 +90,7 @@ notify()
         disabled={loading}
         className=" w-full text-ternary contact_button disabled:bg-gray-400 disabled:text-gray-100   mt-4"
       >
-        Send Message
+        Wyślij wiadomość
       </button>
     </form>
   );

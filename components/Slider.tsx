@@ -12,7 +12,7 @@ export const Slider = () => {
             <Logo
               width="100"
               height="100"
-              alt={`${Logo.name} logo on slider banner`}
+              alt={`Logo ${Logo.name} na banerze`}
             />
           </div>
         ))}
@@ -24,7 +24,7 @@ export const Slider = () => {
             <Logo
               width="100"
               height="100"
-              alt={`${Logo.name} logo on slider banner`}
+              alt={`Logo ${Logo.name} na banerze`}
             />
           </div>
         ))}

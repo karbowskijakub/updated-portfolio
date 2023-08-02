@@ -84,7 +84,7 @@ body,
 /* About section */
 
 .about-container {
-  @apply flex  flex-col lg:flex-row  mt-20 sm:mt-32;
+  @apply flex  flex-col lg:flex-row  mt-20 sm:mt-16;
 }
 /* Icons */
 

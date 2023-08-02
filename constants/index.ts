@@ -64,7 +64,7 @@ export const imagesArray = [
 export const iconsData = [
   {
     title: "Strony internetowe",
-    text: "Wykonam stronę wizytówkę dla twojego biznesu.",
+    text: "Wykonam kreatywną stronę wizytówkę dla twojego biznesu.",
     icon: iconsArrayThree[5],
   },
   {
