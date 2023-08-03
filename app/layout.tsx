@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Jakub Karbowski - strony internetowe",
   description: "Strony i aplikacje internetowe",
   icons: {
-    icon: "/icons/jklogo.png",
+    icon: "/app/icon.png",
   },
 };
 
